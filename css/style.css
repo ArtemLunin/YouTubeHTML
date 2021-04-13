@@ -19,6 +19,7 @@ body {
     top:0;
     left: 0;
     width: 100%;
+    z-index: 99;
     background-color: #fff;
 }
 .menu-button {
@@ -153,6 +154,10 @@ body {
     height: 26px;
     border-radius: 50%;
 }
+.channel {
+    position: relative;
+    margin-bottom: 49px;
+}
 .channel-title {
     display: flex;
     align-items: center;
@@ -161,6 +166,7 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 33px;
+    margin-bottom: 30px;
 }
 .channel-avatar {
     width: 50px;
@@ -196,4 +202,48 @@ body {
     line-height: 18px;
     color: #fff;
     padding: 3px 9px;
+}
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #C2C2C2;
+}
+.video-counter {
+    display: flex;
+}
+.video-views {
+    margin-right: 5px;
+}
+.video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.slider-buttons {
+    position: absolute;
+    right: 8%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+.channel-button {
+    cursor: pointer;
 }
